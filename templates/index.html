@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diabetes Prediction</title>
+    <link rel="shortcut icon" href="../static/diabetes.ico">
+    <link href="../static/all.css" rel="stylesheet">
+    <link href="../static/bootstrap.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="header" class="sticky-md-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 py-md-2">
+                    <a href="https://github.com/AbhineetAman" target="_blank"><i title="GitHub"
+                            class="fab fa-github"></i></a>
+                </div>
+
+
+                <div class="col-md-10">
+                    <div>
+                        <h1 id="main-heading">DIABETES PREDICTOR</h1>
+                    </div>
+
+                </div>
+                <div class="col-md-1 py-md-2">
+                    <a href=""><i title="Explanation Guide" class="fas fa-book-open"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="input">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="input-heading">INPUT PARAMETERS</h2>
+                    <div class="input-form">
+                        <form action="{{ url_for('predict1') }}" autocomplete="on" target="_blank" method="POST">
+                            <div id="input-1">
+                                <label for="pregnancies">Number of Pregnancies:</label><br>
+                                <input type="number" id="Preg" name="pregnancies" size="30" min="0" placeholder="ex:0,1" required><br>
+                            </div>
+                            <div id="input-2">
+                                <label for="glucose">Glucose Level:(in mg/dl)</label><br>
+                                <input type="number" id="Gluc" name="glucose" step="0.01" size="30" min="0" placeholder="ex:75,90" required><br>
+                            </div>
+
+                            <div id="input-3">
+                                <label for="bloodpressure">Blood Pressure:(in mm/Hg)</label><br>
+                                <input type="number" id="BP" name="bloodpressure" step="0.01" size="30" min="0" placeholder="ex:75,90" required><br>
+                            </div>
+                            <div id="input-4">
+                                <label for="skinthickness">Skin Thickness:(in mm)</label><br>
+                                <input type="number" id="Skin" name="skinthickness" step="0.01" size="30" min="0" placeholder="ex:10,30" required><br>
+                            </div>
+                            <div id="input-5">
+                                <label for="insulin">Insulin Level:(in mu/ml)</label><br>
+                                <input type="number" id="Ins" name="insulin" step="0.01" size="30" min="0" placeholder="ex:120,250" required><br>
+                            </div>
+                            <div id="input-6">
+                                <label for="bmi">Body Mass Index(BMI):</label><br>
+                                <input type="number" id="bm" name="bmi" step="0.01" size="30" min="0" placeholder="ex:20.8,30.5" required><br>
+                            </div>
+                            <div id="input-8">
+                                <label for="dpf">Diabetes Pedigree Function:</label><br>
+                                <input type="number" id="DiabPedigF" name="dpf" step="0.01" size="30" min="0" placeholder="ex:0.12,0.56" required><br>
+                            </div>
+                            <div id="input-9">
+                                <label for="age">Age:(in years)</label><br>
+                                <input type="number" id="lname" name="age" size="30" min="0" placeholder="ex:20,50" required><br>
+                            </div>
+                            <input id="predict" type="submit" value="Predict">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

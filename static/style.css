@@ -1,0 +1,62 @@
+#header {
+    background: #CAD3C8;
+}
+
+#header a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    font-size: 1.5rem;
+}
+
+#header a:hover {
+    color: #57606f;
+}
+
+#header h1 {
+    text-align: center;
+    color: black;
+    text-emphasis-color: grey;
+}
+
+#input {
+    background: url(../static/xy.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+#input .col-md-12 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+
+.input-form {
+    padding: 40px 0;
+}
+
+#input-heading {
+    color: white;
+    font-weight: bolder;
+}
+
+#predict {
+    margin-top: 30px;
+    border-radius: 40%;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+#input-1,
+#input-2,
+#input-3,
+#input-4,
+#input-5,
+#input-6,
+#input-7,
+#input-8,
+#input-9 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
