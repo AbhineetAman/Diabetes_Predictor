@@ -12,3 +12,5 @@ ALGORITHMS USED:
 A number of common classification algorithms like _SVM,Decision Tree,Logistic Regression,KNN,GaussianNB_ along with ensemble algorithms like _Random Forest Classifier_ were used and the model with best accuracy(in this case precision score) was finally considered for doing the predictions.
 
 APP-LINK:https://diabetespredictor.herokuapp.com/
+
+![Alt Text](https://github.com/AbhineetAman/Diabetes_Predictor/blob/main/Animation_model.gif)
